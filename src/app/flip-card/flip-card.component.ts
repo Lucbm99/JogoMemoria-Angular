@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class FlipCardComponent implements OnInit {
 
   toggleProperty = false;
+  quantity = 15;
 
   constructor() { }
 
