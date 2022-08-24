@@ -7,22 +7,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FlipCardComponent implements OnInit {
 
-  toggleProperty1 = false;
-  toggleProperty2 = false;
-  toggleProperty3 = false;
-  toggleProperty4 = false;
-  toggleProperty5 = false;
-  toggleProperty6 = false;
-  toggleProperty7 = false;
-  toggleProperty8 = false;
-  toggleProperty9 = false;
-  toggleProperty10 = false;
-  toggleProperty11 = false;
-  toggleProperty12 = false;
+  toggleProperty1 = true;
+  toggleProperty2 = true;
+  toggleProperty3 = true;
+  toggleProperty4 = true;
+  toggleProperty5 = true;
+  toggleProperty6 = true;
+  toggleProperty7 = true;
+  toggleProperty8 = true;
+  toggleProperty9 = true;
+  toggleProperty10 = true;
+  toggleProperty11 = true;
+  toggleProperty12 = true;
 
   constructor() { }
 
   ngOnInit() {
+    setTimeout(() => {
+      this.startGame();
+    }, 3000);
   }
 
   toggle1() {
@@ -73,4 +76,19 @@ export class FlipCardComponent implements OnInit {
     this.toggleProperty12 = !this.toggleProperty12;
   }
   
+
+  startGame() {
+    this.toggleProperty1 = false;
+    this.toggleProperty2 = false;
+    this.toggleProperty3 = false;
+    this.toggleProperty4 = false;
+    this.toggleProperty5 = false;
+    this.toggleProperty6 = false;
+    this.toggleProperty7 = false;
+    this.toggleProperty8 = false;
+    this.toggleProperty9 = false;
+    this.toggleProperty10 = false;
+    this.toggleProperty11 = false;
+    this.toggleProperty12 = false;
+  }
 }
