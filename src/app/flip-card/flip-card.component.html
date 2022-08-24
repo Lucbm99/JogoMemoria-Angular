@@ -1,15 +1,203 @@
-<div class="area-cards" *ngFor="let i of quantity">
+<div class="area-cards">
     <div class="container">
-        <div [ngClass]="toggleProperty ? 'flipped' : ''" class="card">
+        <div [ngClass]="toggleProperty1 ? 'flipped' : ''" class="card">
             <div class="front">
                 <ng-content select="flip-card-front"></ng-content>
-            <div class="arrow-icon" (click)="toggle()">
-                <i class="ion-ios-arrow-back"></i>
-            </div>
+                <div class="arrow-icon" (click)="toggle1()">
+                    <i class="ion-ios-arrow-back"></i>
+                </div>
             </div>
             <div class="back">
                 <ng-content select="flip-card-back"></ng-content>
-                <div class="arrow-icon" (click)="toggle()">
+                <img src="assets/images/sass.png" alt="Sass">
+                <div class="arrow-icon" (click)="toggle1()">
+                    <i class="ion-ios-arrow-back"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div [ngClass]="toggleProperty2 ? 'flipped' : ''" class="card">
+            <div class="front">
+                <ng-content select="flip-card-front"></ng-content>
+                <div class="arrow-icon" (click)="toggle2()">
+                    <i class="ion-ios-arrow-back"></i>
+                </div>
+            </div>
+            <div class="back">
+                <ng-content select="flip-card-back"></ng-content>
+                <img src="assets/images/dart.png" alt="Dart">
+                <div class="arrow-icon" (click)="toggle2()">
+                    <i class="ion-ios-arrow-back"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div [ngClass]="toggleProperty3 ? 'flipped' : ''" class="card">
+            <div class="front">
+                <ng-content select="flip-card-front"></ng-content>
+                <div class="arrow-icon" (click)="toggle3()">
+                    <i class="ion-ios-arrow-back"></i>
+                </div>
+            </div>
+            <div class="back">
+                <ng-content select="flip-card-back"></ng-content>
+                <img src="assets/images/docker.png" alt="Docker">
+                <div class="arrow-icon" (click)="toggle3()">
+                    <i class="ion-ios-arrow-back"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div [ngClass]="toggleProperty4 ? 'flipped' : ''" class="card">
+            <div class="front">
+                <ng-content select="flip-card-front"></ng-content>
+                <div class="arrow-icon" (click)="toggle4()">
+                    <i class="ion-ios-arrow-back"></i>
+                </div>
+            </div>
+            <div class="back">
+                <ng-content select="flip-card-back"></ng-content>
+                <img src="assets/images/github.png" alt="Github">
+                <div class="arrow-icon" (click)="toggle4()">
+                    <i class="ion-ios-arrow-back"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div [ngClass]="toggleProperty5 ? 'flipped' : ''" class="card">
+            <div class="front">
+                <ng-content select="flip-card-front"></ng-content>
+                <div class="arrow-icon" (click)="toggle5()">
+                    <i class="ion-ios-arrow-back"></i>
+                </div>
+            </div>
+            <div class="back">
+                <ng-content select="flip-card-back"></ng-content>
+                <img src="assets/images/golang.png" alt="Golang">
+                <div class="arrow-icon" (click)="toggle5()">
+                    <i class="ion-ios-arrow-back"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div [ngClass]="toggleProperty6 ? 'flipped' : ''" class="card">
+            <div class="front">
+                <ng-content select="flip-card-front"></ng-content>
+                <div class="arrow-icon" (click)="toggle6()">
+                    <i class="ion-ios-arrow-back"></i>
+                </div>
+            </div>
+            <div class="back">
+                <ng-content select="flip-card-back"></ng-content>
+                <img src="assets/images/kotlin.png" alt="Kotlin">
+                <div class="arrow-icon" (click)="toggle6()">
+                    <i class="ion-ios-arrow-back"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div [ngClass]="toggleProperty7 ? 'flipped' : ''" class="card">
+            <div class="front">
+                <ng-content select="flip-card-front"></ng-content>
+                <div class="arrow-icon" (click)="toggle7()">
+                    <i class="ion-ios-arrow-back"></i>
+                </div>
+            </div>
+            <div class="back">
+                <ng-content select="flip-card-back"></ng-content>
+                <img src="assets/images/github.png" alt="Github">
+                <div class="arrow-icon" (click)="toggle7()">
+                    <i class="ion-ios-arrow-back"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div [ngClass]="toggleProperty8 ? 'flipped' : ''" class="card">
+            <div class="front">
+                <ng-content select="flip-card-front"></ng-content>
+                <div class="arrow-icon" (click)="toggle8()">
+                    <i class="ion-ios-arrow-back"></i>
+                </div>
+            </div>
+            <div class="back">
+                <ng-content select="flip-card-back"></ng-content>
+                <img src="assets/images/docker.png" alt="Docker">
+                <div class="arrow-icon" (click)="toggle8()">
+                    <i class="ion-ios-arrow-back"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div [ngClass]="toggleProperty9 ? 'flipped' : ''" class="card">
+            <div class="front">
+                <ng-content select="flip-card-front"></ng-content>
+                <div class="arrow-icon" (click)="toggle9()">
+                    <i class="ion-ios-arrow-back"></i>
+                </div>
+            </div>
+            <div class="back">
+                <ng-content select="flip-card-back"></ng-content>
+                <img src="assets/images/sass.png" alt="Sass">
+                <div class="arrow-icon" (click)="toggle9()">
+                    <i class="ion-ios-arrow-back"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div [ngClass]="toggleProperty10 ? 'flipped' : ''" class="card">
+            <div class="front">
+                <ng-content select="flip-card-front"></ng-content>
+                <div class="arrow-icon" (click)="toggle10()">
+                    <i class="ion-ios-arrow-back"></i>
+                </div>
+            </div>
+            <div class="back">
+                <ng-content select="flip-card-back"></ng-content>
+                <img src="assets/images/kotlin.png" alt="Kotlin">
+                <div class="arrow-icon" (click)="toggle10()">
+                    <i class="ion-ios-arrow-back"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div [ngClass]="toggleProperty11 ? 'flipped' : ''" class="card">
+            <div class="front">
+                <ng-content select="flip-card-front"></ng-content>
+                <div class="arrow-icon" (click)="toggle11()">
+                    <i class="ion-ios-arrow-back"></i>
+                </div>
+            </div>
+            <div class="back">
+                <ng-content select="flip-card-back"></ng-content>
+                <img src="assets/images/dart.png" alt="Dart">
+                <div class="arrow-icon" (click)="toggle11()">
+                    <i class="ion-ios-arrow-back"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div [ngClass]="toggleProperty12 ? 'flipped' : ''" class="card">
+            <div class="front">
+                <ng-content select="flip-card-front"></ng-content>
+                <div class="arrow-icon" (click)="toggle12()">
+                    <i class="ion-ios-arrow-back"></i>
+                </div>
+            </div>
+            <div class="back">
+                <ng-content select="flip-card-back"></ng-content>
+                <img src="assets/images/golang.png" alt="Golang">
+                <div class="arrow-icon" (click)="toggle12()">
                     <i class="ion-ios-arrow-back"></i>
                 </div>
             </div>
