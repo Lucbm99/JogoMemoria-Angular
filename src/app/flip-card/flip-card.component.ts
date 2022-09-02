@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FlipCardService } from './flip-card.service';
 
 @Component({
   selector: 'app-flip-card',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./flip-card.component.scss']
 })
 export class FlipCardComponent implements OnInit {
+
+  public listaImagens: any;
 
   toggleProperty1 = true;
   toggleProperty2 = true;
@@ -20,12 +23,22 @@ export class FlipCardComponent implements OnInit {
   toggleProperty11 = true;
   toggleProperty12 = true;
 
-  constructor() { }
+  constructor(
+    private _flipCardService: FlipCardService,
+  ) { }
 
   ngOnInit() {
     setTimeout(() => {
       this.startGame();
     }, 3000);
+
+    this.getImagens();
+  }
+
+  public getImagens() {
+    this._flipCardService.getImages().subscribe((response) =>
+      this.listaImagens = response
+    );
   }
 
   toggle1() {
