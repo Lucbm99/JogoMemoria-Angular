@@ -12,7 +12,7 @@
             </div>
             <div class="back">
                 <ng-content select="flip-card-back"></ng-content>
-                <img [src]="listaImagens" alt="Sass">
+                <img src="{{ listaImagens.imagem }}" alt="Sass">
                 <div class="arrow-icon" (click)="toggle1()">
                     <i class="ion-ios-arrow-back"></i>
                 </div>

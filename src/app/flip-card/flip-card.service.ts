@@ -26,4 +26,17 @@ export class FlipCardService {
       })
     );
   }
+
+  public getImagesById(id: number): Observable<any> {
+    return this._httpClient.get<any>(`${this.baseURL}/imagens/${id}`)
+      .pipe(
+        tap((data: any) => 
+        data,
+      ),
+      catchError((error: HttpErrorResponse) => {
+        console.log('error', error);
+        return EMPTY; 
+      })
+    );
+  }
 }

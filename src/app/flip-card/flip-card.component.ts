@@ -9,6 +9,7 @@ import { FlipCardService } from './flip-card.service';
 export class FlipCardComponent implements OnInit {
 
   public listaImagens: any;
+  public listaImagensById: any;
 
   toggleProperty1 = true;
   toggleProperty2 = true;
@@ -37,7 +38,15 @@ export class FlipCardComponent implements OnInit {
 
   public getImagens() {
     this._flipCardService.getImages().subscribe((response) =>
+      // console.log(response),
       this.listaImagens = response
+    );
+  }
+
+  public getImagensById(id: number) {
+    this._flipCardService.getImagesById(id).subscribe((response) =>
+      // console.log(response),
+      this.listaImagensById = response
     );
   }
 
