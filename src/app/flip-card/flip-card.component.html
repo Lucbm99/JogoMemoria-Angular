@@ -6,14 +6,14 @@
         <div [ngClass]="toggleProperty1 ? 'flipped' : ''" class="card">
             <div class="front">
                 <ng-content select="flip-card-front"></ng-content>
-                <div class="arrow-icon" (click)="toggle1()">
+                <div class="arrow-icon" (click)="toggle1($event)">
                     <i class="ion-ios-arrow-back"></i>
                 </div>
             </div>
-            <div class="back">
+            <div class="back" data-img-value="1">
                 <ng-content select="flip-card-back"></ng-content>
-                <img src="assets/images/sass.png" alt="Sass">
-                <div class="arrow-icon" (click)="toggle1()">
+                <img src="assets/images/sass.png" alt="Sass" #sass>
+                <div class="arrow-icon" (click)="toggle1($event)">
                     <i class="ion-ios-arrow-back"></i>
                 </div>
             </div>
@@ -23,14 +23,14 @@
         <div [ngClass]="toggleProperty2 ? 'flipped' : ''" class="card">
             <div class="front">
                 <ng-content select="flip-card-front"></ng-content>
-                <div class="arrow-icon" (click)="toggle2()">
+                <div class="arrow-icon" (click)="toggle2($event)">
                     <i class="ion-ios-arrow-back"></i>
                 </div>
             </div>
-            <div class="back">
+            <div class="back" data-img-value="2">
                 <ng-content select="flip-card-back"></ng-content>
-                <img src="assets/images/dart.png" alt="Dart">
-                <div class="arrow-icon" (click)="toggle2()">
+                <img src="assets/images/dart.png" alt="Dart" #dart>
+                <div class="arrow-icon" (click)="toggle2($event)">
                     <i class="ion-ios-arrow-back"></i>
                 </div>
             </div>
@@ -47,7 +47,7 @@
             <div class="back">
                 <ng-content select="flip-card-back"></ng-content>
                 <img src="assets/images/docker.png" alt="Docker">
-                <div class="arrow-icon" (click)="toggle3()">
+                <div class="arrow-icon" (click)="toggle3()" #docker>
                     <i class="ion-ios-arrow-back"></i>
                 </div>
             </div>
@@ -64,7 +64,7 @@
             <div class="back">
                 <ng-content select="flip-card-back"></ng-content>
                 <img src="assets/images/github.png" alt="Github">
-                <div class="arrow-icon" (click)="toggle4()">
+                <div class="arrow-icon" (click)="toggle4()" #github>
                     <i class="ion-ios-arrow-back"></i>
                 </div>
             </div>
@@ -81,7 +81,7 @@
             <div class="back">
                 <ng-content select="flip-card-back"></ng-content>
                 <img src="assets/images/golang.png" alt="Golang">
-                <div class="arrow-icon" (click)="toggle5()">
+                <div class="arrow-icon" (click)="toggle5()" #golang>
                     <i class="ion-ios-arrow-back"></i>
                 </div>
             </div>
@@ -98,7 +98,7 @@
             <div class="back">
                 <ng-content select="flip-card-back"></ng-content>
                 <img src="assets/images/kotlin.png" alt="Kotlin">
-                <div class="arrow-icon" (click)="toggle6()">
+                <div class="arrow-icon" (click)="toggle6()" #kotlin>
                     <i class="ion-ios-arrow-back"></i>
                 </div>
             </div>
@@ -115,7 +115,7 @@
             <div class="back">
                 <ng-content select="flip-card-back"></ng-content>
                 <img src="assets/images/github.png" alt="Github">
-                <div class="arrow-icon" (click)="toggle7()">
+                <div class="arrow-icon" (click)="toggle7()" #github>
                     <i class="ion-ios-arrow-back"></i>
                 </div>
             </div>
@@ -132,7 +132,7 @@
             <div class="back">
                 <ng-content select="flip-card-back"></ng-content>
                 <img src="assets/images/docker.png" alt="Docker">
-                <div class="arrow-icon" (click)="toggle8()">
+                <div class="arrow-icon" (click)="toggle8()" #docker>
                     <i class="ion-ios-arrow-back"></i>
                 </div>
             </div>
@@ -149,7 +149,7 @@
             <div class="back">
                 <ng-content select="flip-card-back"></ng-content>
                 <img src="assets/images/sass.png" alt="Sass">
-                <div class="arrow-icon" (click)="toggle9()">
+                <div class="arrow-icon" (click)="toggle9()" #sass>
                     <i class="ion-ios-arrow-back"></i>
                 </div>
             </div>
@@ -166,7 +166,7 @@
             <div class="back">
                 <ng-content select="flip-card-back"></ng-content>
                 <img src="assets/images/kotlin.png" alt="Kotlin">
-                <div class="arrow-icon" (click)="toggle10()">
+                <div class="arrow-icon" (click)="toggle10()" #kotlin>
                     <i class="ion-ios-arrow-back"></i>
                 </div>
             </div>
@@ -183,7 +183,7 @@
             <div class="back">
                 <ng-content select="flip-card-back"></ng-content>
                 <img src="assets/images/dart.png" alt="Dart">
-                <div class="arrow-icon" (click)="toggle11()">
+                <div class="arrow-icon" (click)="toggle11()" #dart>
                     <i class="ion-ios-arrow-back"></i>
                 </div>
             </div>
@@ -200,7 +200,7 @@
             <div class="back">
                 <ng-content select="flip-card-back"></ng-content>
                 <img src="assets/images/golang.png" alt="Golang">
-                <div class="arrow-icon" (click)="toggle12()">
+                <div class="arrow-icon" (click)="toggle12()" #golang>
                     <i class="ion-ios-arrow-back"></i>
                 </div>
             </div>
