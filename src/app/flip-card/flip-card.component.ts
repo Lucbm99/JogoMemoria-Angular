@@ -59,14 +59,6 @@ export class FlipCardComponent implements OnInit {
   //   );
   // }
 
-  todosIguaisOuDiferentes(array: any) {
-    var filtrado = array.filter(function(elem: any, pos: any, arr: any) {
-        return arr.indexOf(elem) == pos;
-    });
-
-    return filtrado.length === 1 || filtrado.length === array.length; 
-}
-
   toggle1(event: Event) {
     const imgSass = this.sass.nativeElement.src;
     if(event) {
@@ -91,14 +83,18 @@ export class FlipCardComponent implements OnInit {
       this.primeiroClique.push(imgDart);
     }
     console.log(this.primeiroClique);
-    // let a = this.todosIguaisOuDiferentes(this.primeiroClique);
-    // console.log(a);
 
-    // if(a === true) {
-    //   this.toggleProperty2 = false;
-    // } else {
-    //   this.toggleProperty2 = true;
-    // }
+    //verificando se os itens no array primeiroClique são iguais
+    let a = this.primeiroClique.every((val: any, i: any, arr: any) => val === arr[0])
+    console.log(a); 
+
+    if(a === false) {
+      setTimeout(() => {
+        this.startGame();
+        this.primeiroClique = [];
+      }, 1000);
+    }
+
     this.toggleProperty2 = !this.toggleProperty2;
   }
 
