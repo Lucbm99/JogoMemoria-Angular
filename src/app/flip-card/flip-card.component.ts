@@ -179,6 +179,7 @@ export class FlipCardComponent implements OnInit {
     if(event) {
       this.primeiroClique.push(imgGoLang);
     }
+    console.log(this.primeiroClique)
 
     //verificando se os dois itens iniciais no array primeiroClique são iguais
     let checkCardsEqual = this.primeiroClique.every((val: any, i: any, arr: any) => val === arr[0])
@@ -207,6 +208,7 @@ export class FlipCardComponent implements OnInit {
     if(event) {
       this.primeiroClique.push(imgKotlin);
     }
+    console.log(this.primeiroClique)
 
     //verificando se os dois itens iniciais no array primeiroClique são iguais
     let checkCardsEqual = this.primeiroClique.every((val: any, i: any, arr: any) => val === arr[0])
@@ -235,6 +237,8 @@ export class FlipCardComponent implements OnInit {
     if(event) {
       this.primeiroClique.push(imgGithub);
     }
+    console.log(this.primeiroClique)
+
     //verificando se os dois itens iniciais no array primeiroClique são iguais
     let checkCardsEqual = this.primeiroClique.every((val: any, i: any, arr: any) => val === arr[0])
     console.log(checkCardsEqual); 
@@ -262,6 +266,8 @@ export class FlipCardComponent implements OnInit {
     if(event) {
       this.primeiroClique.push(imgDocker);
     }
+    console.log(this.primeiroClique)
+
     //verificando se os dois itens iniciais no array primeiroClique são iguais
     let checkCardsEqual = this.primeiroClique.every((val: any, i: any, arr: any) => val === arr[0])
     console.log(checkCardsEqual); 
@@ -289,6 +295,8 @@ export class FlipCardComponent implements OnInit {
     if(event) {
       this.primeiroClique.push(imgSass);
     }
+    console.log(this.primeiroClique)
+
     //verificando se os dois itens iniciais no array primeiroClique são iguais
     let checkCardsEqual = this.primeiroClique.every((val: any, i: any, arr: any) => val === arr[0])
     console.log(checkCardsEqual); 
@@ -316,6 +324,7 @@ export class FlipCardComponent implements OnInit {
     if(event) {
       this.primeiroClique.push(imgKotlin);
     }
+    console.log(this.primeiroClique)
     //verificando se os dois itens iniciais no array primeiroClique são iguais
     let checkCardsEqual = this.primeiroClique.every((val: any, i: any, arr: any) => val === arr[0])
     console.log(checkCardsEqual); 
@@ -343,6 +352,7 @@ export class FlipCardComponent implements OnInit {
     if(event) {
       this.primeiroClique.push(imgDart);
     }
+    console.log(this.primeiroClique)
     //verificando se os dois itens iniciais no array primeiroClique são iguais
     let checkCardsEqual = this.primeiroClique.every((val: any, i: any, arr: any) => val === arr[0])
     console.log(checkCardsEqual); 
@@ -370,6 +380,7 @@ export class FlipCardComponent implements OnInit {
     if(event) {
       this.primeiroClique.push(imgGoLang);
     }
+    console.log(this.primeiroClique)
     //verificando se os dois itens iniciais no array primeiroClique são iguais
     let checkCardsEqual = this.primeiroClique.every((val: any, i: any, arr: any) => val === arr[0])
     console.log(checkCardsEqual); 
