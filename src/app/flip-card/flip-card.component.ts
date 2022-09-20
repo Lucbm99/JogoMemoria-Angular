@@ -66,15 +66,17 @@ export class FlipCardComponent implements OnInit {
     console.log(this.primeiroClique);
 
     //verificando se os dois itens iniciais no array primeiroClique são iguais
-    let checkCardsEqual = this.primeiroClique.every((val: any, i: any, arr: any) => val === arr[0])
-    console.log(checkCardsEqual); 
-
-    if(checkCardsEqual === false) {
-      setTimeout(() => {
-        this.startGame();
-        this.primeiroClique = [];
-      }, 1000);
+    if(this.primeiroClique.length % 2 === 0) {
+      let checkCardsEqual = this.primeiroClique.every((val: any, i: any, arr: any) => val === arr[0])
+      console.log(checkCardsEqual); 
+      if(checkCardsEqual === false) {
+        setTimeout(() => {
+          this.startGame();
+          this.primeiroClique = [];
+        }, 1000);
+      }
     }
+
 
     this.toggleProperty1 = !this.toggleProperty1;
   }
@@ -96,15 +98,17 @@ export class FlipCardComponent implements OnInit {
     console.log(this.primeiroClique);
 
     //verificando se os dois itens iniciais no array primeiroClique são iguais
-    let checkCardsEqual = this.primeiroClique.every((val: any, i: any, arr: any) => val === arr[0])
-    console.log(checkCardsEqual); 
-
-    if(checkCardsEqual === false) {
-      setTimeout(() => {
-        this.startGame();
-        this.primeiroClique = [];
-      }, 1000);
+    if(this.primeiroClique.length % 2 === 0) {
+      let checkCardsEqual = this.primeiroClique.every((val: any, i: any, arr: any) => val === arr[0])
+      console.log(checkCardsEqual); 
+      if(checkCardsEqual === false) {
+        setTimeout(() => {
+          this.startGame();
+          this.primeiroClique = [];
+        }, 1000);
+      }
     }
+
 
     this.toggleProperty2 = !this.toggleProperty2;
   }
@@ -125,15 +129,17 @@ export class FlipCardComponent implements OnInit {
     }
     console.log(this.primeiroClique);
     //verificando se os dois itens iniciais no array primeiroClique são iguais
-    let checkCardsEqual = this.primeiroClique.every((val: any, i: any, arr: any) => val === arr[0])
-    console.log(checkCardsEqual); 
-
-    if(checkCardsEqual === false) {
-      setTimeout(() => {
-        this.startGame();
-        this.primeiroClique = [];
-      }, 1000);
+    if(this.primeiroClique.length % 2 === 0) {
+      let checkCardsEqual = this.primeiroClique.every((val: any, i: any, arr: any) => val === arr[0])
+      console.log(checkCardsEqual); 
+      if(checkCardsEqual === false) {
+        setTimeout(() => {
+          this.startGame();
+          this.primeiroClique = [];
+        }, 1000);
+      }
     }
+
 
     this.toggleProperty3 = !this.toggleProperty3;
   }
@@ -153,15 +159,17 @@ export class FlipCardComponent implements OnInit {
     }
     console.log(this.primeiroClique);
     //verificando se os dois itens iniciais no array primeiroClique são iguais
-    let checkCardsEqual = this.primeiroClique.every((val: any, i: any, arr: any) => val === arr[0])
-    console.log(checkCardsEqual); 
-
-    if(checkCardsEqual === false) {
-      setTimeout(() => {
-        this.startGame();
-        this.primeiroClique = [];
-      }, 1000);
+    if(this.primeiroClique.length % 2 === 0) {
+      let checkCardsEqual = this.primeiroClique.every((val: any, i: any, arr: any) => val === arr[0])
+      console.log(checkCardsEqual); 
+      if(checkCardsEqual === false) {
+        setTimeout(() => {
+          this.startGame();
+          this.primeiroClique = [];
+        }, 1000);
+      }
     }
+
 
     this.toggleProperty4 = !this.toggleProperty4;
   }
@@ -182,15 +190,17 @@ export class FlipCardComponent implements OnInit {
     console.log(this.primeiroClique)
 
     //verificando se os dois itens iniciais no array primeiroClique são iguais
-    let checkCardsEqual = this.primeiroClique.every((val: any, i: any, arr: any) => val === arr[0])
-    console.log(checkCardsEqual); 
-
-    if(checkCardsEqual === false) {
-      setTimeout(() => {
-        this.startGame();
-        this.primeiroClique = [];
-      }, 1000);
+    if(this.primeiroClique.length % 2 === 0) {
+      let checkCardsEqual = this.primeiroClique.every((val: any, i: any, arr: any) => val === arr[0])
+      console.log(checkCardsEqual); 
+      if(checkCardsEqual === false) {
+        setTimeout(() => {
+          this.startGame();
+          this.primeiroClique = [];
+        }, 1000);
+      }
     }
+
 
     this.toggleProperty5 = !this.toggleProperty5;
   }
@@ -211,15 +221,17 @@ export class FlipCardComponent implements OnInit {
     console.log(this.primeiroClique)
 
     //verificando se os dois itens iniciais no array primeiroClique são iguais
-    let checkCardsEqual = this.primeiroClique.every((val: any, i: any, arr: any) => val === arr[0])
-    console.log(checkCardsEqual); 
-
-    if(checkCardsEqual === false) {
-      setTimeout(() => {
-        this.startGame();
-        this.primeiroClique = [];
-      }, 1000);
+    if(this.primeiroClique.length % 2 === 0) {
+      let checkCardsEqual = this.primeiroClique.every((val: any, i: any, arr: any) => val === arr[0])
+      console.log(checkCardsEqual); 
+      if(checkCardsEqual === false) {
+        setTimeout(() => {
+          this.startGame();
+          this.primeiroClique = [];
+        }, 1000);
+      }
     }
+
 
     this.toggleProperty6 = !this.toggleProperty6;    
   }
@@ -240,15 +252,17 @@ export class FlipCardComponent implements OnInit {
     console.log(this.primeiroClique)
 
     //verificando se os dois itens iniciais no array primeiroClique são iguais
-    let checkCardsEqual = this.primeiroClique.every((val: any, i: any, arr: any) => val === arr[0])
-    console.log(checkCardsEqual); 
-
-    if(checkCardsEqual === false) {
-      setTimeout(() => {
-        this.startGame();
-        this.primeiroClique = [];
-      }, 1000);
+    if(this.primeiroClique.length % 2 === 0) {
+      let checkCardsEqual = this.primeiroClique.every((val: any, i: any, arr: any) => val === arr[0])
+      console.log(checkCardsEqual); 
+      if(checkCardsEqual === false) {
+        setTimeout(() => {
+          this.startGame();
+          this.primeiroClique = [];
+        }, 1000);
+      }
     }
+
 
     this.toggleProperty7 = !this.toggleProperty7;
   }
@@ -269,14 +283,15 @@ export class FlipCardComponent implements OnInit {
     console.log(this.primeiroClique)
 
     //verificando se os dois itens iniciais no array primeiroClique são iguais
-    let checkCardsEqual = this.primeiroClique.every((val: any, i: any, arr: any) => val === arr[0])
-    console.log(checkCardsEqual); 
-
-    if(checkCardsEqual === false) {
-      setTimeout(() => {
-        this.startGame();
-        this.primeiroClique = [];
-      }, 1000);
+    if(this.primeiroClique.length % 2 === 0) {
+      let checkCardsEqual = this.primeiroClique.every((val: any, i: any, arr: any) => val === arr[0])
+      console.log(checkCardsEqual); 
+      if(checkCardsEqual === false) {
+        setTimeout(() => {
+          this.startGame();
+          this.primeiroClique = [];
+        }, 1000);
+      }
     }
 
     this.toggleProperty8 = !this.toggleProperty8;
@@ -298,14 +313,15 @@ export class FlipCardComponent implements OnInit {
     console.log(this.primeiroClique)
 
     //verificando se os dois itens iniciais no array primeiroClique são iguais
-    let checkCardsEqual = this.primeiroClique.every((val: any, i: any, arr: any) => val === arr[0])
-    console.log(checkCardsEqual); 
-
-    if(checkCardsEqual === false) {
-      setTimeout(() => {
-        this.startGame();
-        this.primeiroClique = [];
-      }, 1000);
+    if(this.primeiroClique.length % 2 === 0) {
+      let checkCardsEqual = this.primeiroClique.every((val: any, i: any, arr: any) => val === arr[0])
+      console.log(checkCardsEqual); 
+      if(checkCardsEqual === false) {
+        setTimeout(() => {
+          this.startGame();
+          this.primeiroClique = [];
+        }, 1000);
+      }
     }
 
     this.toggleProperty9 = !this.toggleProperty9;
@@ -326,15 +342,17 @@ export class FlipCardComponent implements OnInit {
     }
     console.log(this.primeiroClique)
     //verificando se os dois itens iniciais no array primeiroClique são iguais
-    let checkCardsEqual = this.primeiroClique.every((val: any, i: any, arr: any) => val === arr[0])
-    console.log(checkCardsEqual); 
-
-    if(checkCardsEqual === false) {
-      setTimeout(() => {
-        this.startGame();
-        this.primeiroClique = [];
-      }, 1000);
+    if(this.primeiroClique.length % 2 === 0) {
+      let checkCardsEqual = this.primeiroClique.every((val: any, i: any, arr: any) => val === arr[0])
+      console.log(checkCardsEqual); 
+      if(checkCardsEqual === false) {
+        setTimeout(() => {
+          this.startGame();
+          this.primeiroClique = [];
+        }, 1000);
+      }
     }
+
 
     this.toggleProperty10 = !this.toggleProperty10;
   }
@@ -354,15 +372,17 @@ export class FlipCardComponent implements OnInit {
     }
     console.log(this.primeiroClique)
     //verificando se os dois itens iniciais no array primeiroClique são iguais
-    let checkCardsEqual = this.primeiroClique.every((val: any, i: any, arr: any) => val === arr[0])
-    console.log(checkCardsEqual); 
-
-    if(checkCardsEqual === false) {
-      setTimeout(() => {
-        this.startGame();
-        this.primeiroClique = [];
-      }, 1000);
+    if(this.primeiroClique.length % 2 === 0) {
+      let checkCardsEqual = this.primeiroClique.every((val: any, i: any, arr: any) => val === arr[0])
+      console.log(checkCardsEqual); 
+      if(checkCardsEqual === false) {
+        setTimeout(() => {
+          this.startGame();
+          this.primeiroClique = [];
+        }, 1000);
+      }
     }
+
 
     this.toggleProperty11 = !this.toggleProperty11;
   }
@@ -382,15 +402,17 @@ export class FlipCardComponent implements OnInit {
     }
     console.log(this.primeiroClique)
     //verificando se os dois itens iniciais no array primeiroClique são iguais
-    let checkCardsEqual = this.primeiroClique.every((val: any, i: any, arr: any) => val === arr[0])
-    console.log(checkCardsEqual); 
-
-    if(checkCardsEqual === false) {
-      setTimeout(() => {
-        this.startGame();
-        this.primeiroClique = [];
-      }, 1000);
+    if(this.primeiroClique.length % 2 === 0) {
+      let checkCardsEqual = this.primeiroClique.every((val: any, i: any, arr: any) => val === arr[0])
+      console.log(checkCardsEqual); 
+      if(checkCardsEqual === false) {
+        setTimeout(() => {
+          this.startGame();
+          this.primeiroClique = [];
+        }, 1000);
+      }
     }
+
 
     this.toggleProperty12 = !this.toggleProperty12;
   }
