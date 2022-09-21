@@ -40,34 +40,23 @@ export class FlipCardComponent implements OnInit {
     setTimeout(() => {
       this.startGame();
     }, 3000);
-
-    // this.getImagens();
   }
-
-  // public getImagens() {
-  //   this._flipCardService.getImages().subscribe((response) =>
-  //     // console.log(response),
-  //     this.listaImagens = response
-  //   );
-  // }
-
-  // public getImagensById(id: number) {
-  //   this._flipCardService.getImagesById(id).subscribe((response) =>
-  //     // console.log(response),
-  //     this.listaImagensById = response
-  //   );
-  // }
 
   toggle1(event: Event) {
     const imgSass = this.sass.nativeElement.src;
     if(event) {
-      this.primeiroClique.push(imgSass);
+      this.primeiroClique.push(
+        {
+          src: imgSass, 
+          aberto: true
+        }
+      );
     }
     console.log(this.primeiroClique);
 
     //verificando se os dois itens iniciais no array primeiroClique são iguais
     if(this.primeiroClique.length % 2 === 0) {
-      let checkCardsEqual = this.primeiroClique.every((val: any, i: any, arr: any) => val === arr[0])
+      let checkCardsEqual = Object.is(this.primeiroClique, this.primeiroClique); 
       console.log(checkCardsEqual); 
       if(checkCardsEqual === false) {
         setTimeout(() => {
@@ -93,7 +82,12 @@ export class FlipCardComponent implements OnInit {
   toggle2(event: Event) {
     const imgDart = this.dart.nativeElement.src;
     if(event) {
-      this.primeiroClique.push(imgDart);
+      this.primeiroClique.push(
+        {
+          src: imgDart, 
+          aberto: true
+        }
+      );    
     }
     console.log(this.primeiroClique);
 
@@ -125,7 +119,12 @@ export class FlipCardComponent implements OnInit {
   toggle3(event: Event) {
     const imgDocker = this.docker.nativeElement.src;
     if(event) {
-      this.primeiroClique.push(imgDocker);
+      this.primeiroClique.push(
+        {
+          src: imgDocker, 
+          aberto: true
+        }
+      );
     }
     console.log(this.primeiroClique);
     //verificando se os dois itens iniciais no array primeiroClique são iguais
@@ -155,8 +154,14 @@ export class FlipCardComponent implements OnInit {
   toggle4(event: Event) {
     const imgGithub = this.github.nativeElement.src;
     if(event) {
-      this.primeiroClique.push(imgGithub);
+      this.primeiroClique.push(
+        {
+          src: imgGithub, 
+          aberto: true
+        }
+      );
     }
+
     console.log(this.primeiroClique);
     //verificando se os dois itens iniciais no array primeiroClique são iguais
     if(this.primeiroClique.length % 2 === 0) {
@@ -185,7 +190,12 @@ export class FlipCardComponent implements OnInit {
   toggle5(event: Event) {
     const imgGoLang = this.golang.nativeElement.src;
     if(event) {
-      this.primeiroClique.push(imgGoLang);
+      this.primeiroClique.push(
+        {
+          src: imgGoLang, 
+          aberto: true
+        }
+      );    
     }
     console.log(this.primeiroClique)
 
@@ -216,7 +226,12 @@ export class FlipCardComponent implements OnInit {
   toggle6(event: Event) {
     const imgKotlin = this.kotlin.nativeElement.src;
     if(event) {
-      this.primeiroClique.push(imgKotlin);
+      this.primeiroClique.push(
+        {
+          src: imgKotlin, 
+          aberto: true
+        }
+      );
     }
     console.log(this.primeiroClique)
 
@@ -232,7 +247,6 @@ export class FlipCardComponent implements OnInit {
       }
     }
 
-
     this.toggleProperty6 = !this.toggleProperty6;    
   }
 
@@ -247,7 +261,12 @@ export class FlipCardComponent implements OnInit {
   toggle7(event: Event) {
     const imgGithub = this.github.nativeElement.src;
     if(event) {
-      this.primeiroClique.push(imgGithub);
+      this.primeiroClique.push(
+        {
+          src: imgGithub, 
+          aberto: true
+        }
+      );    
     }
     console.log(this.primeiroClique)
 
@@ -278,7 +297,12 @@ export class FlipCardComponent implements OnInit {
   toggle8(event: Event) {
     const imgDocker = this.docker.nativeElement.src;
     if(event) {
-      this.primeiroClique.push(imgDocker);
+      this.primeiroClique.push(
+        {
+          src: imgDocker, 
+          aberto: true
+        }
+      );
     }
     console.log(this.primeiroClique)
 
@@ -308,7 +332,12 @@ export class FlipCardComponent implements OnInit {
   toggle9(event: Event) {
     const imgSass = this.sass.nativeElement.src;
     if(event) {
-      this.primeiroClique.push(imgSass);
+      this.primeiroClique.push(
+        {
+          src: imgSass, 
+          aberto: true
+        }
+      );
     }
     console.log(this.primeiroClique)
 
@@ -338,7 +367,12 @@ export class FlipCardComponent implements OnInit {
   toggle10(event: Event) {
     const imgKotlin = this.kotlin.nativeElement.src;
     if(event) {
-      this.primeiroClique.push(imgKotlin);
+      this.primeiroClique.push(
+        {
+          src: imgKotlin, 
+          aberto: true
+        }
+      );
     }
     console.log(this.primeiroClique)
     //verificando se os dois itens iniciais no array primeiroClique são iguais
@@ -368,7 +402,12 @@ export class FlipCardComponent implements OnInit {
   toggle11(event: Event) {
     const imgDart = this.dart.nativeElement.src;
     if(event) {
-      this.primeiroClique.push(imgDart);
+      this.primeiroClique.push(
+        {
+          src: imgDart, 
+          aberto: true
+        }
+      );
     }
     console.log(this.primeiroClique)
     //verificando se os dois itens iniciais no array primeiroClique são iguais
@@ -398,7 +437,12 @@ export class FlipCardComponent implements OnInit {
   toggle12(event: Event) {
     const imgGoLang = this.golang.nativeElement.src;
     if(event) {
-      this.primeiroClique.push(imgGoLang);
+      this.primeiroClique.push(
+        {
+          src: imgGoLang, 
+          aberto: true
+        }
+      );
     }
     console.log(this.primeiroClique)
     //verificando se os dois itens iniciais no array primeiroClique são iguais
