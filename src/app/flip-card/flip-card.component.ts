@@ -47,24 +47,26 @@ export class FlipCardComponent implements OnInit {
     if(event) {
       this.primeiroClique.push(
         {
-          src: imgSass, 
-          aberto: true
+          src: imgSass,
+          wasFound: true
         }
       );
     }
     console.log(this.primeiroClique);
 
     //verificando se os dois itens iniciais no array primeiroClique são iguais
-    if(this.primeiroClique.length % 2 === 0) {
-      let checkCardsEqual = Object.is(this.primeiroClique, this.primeiroClique); 
-      console.log(checkCardsEqual); 
-      if(checkCardsEqual === false) {
-        setTimeout(() => {
-          this.startGame();
-          this.primeiroClique = [];
-        }, 1000);
-      }
-    }
+      // let checkCardsEqual = Object.keys(this.primeiroClique).every(k1 => 
+      //   Object.keys(this.primeiroClique).some(k2 =>
+      //     this.primeiroClique[k1] === this.primeiroClique[k2]
+      //   )
+      // );
+      // console.log(checkCardsEqual); 
+    //   if(checkCardsEqual === false) {
+    //     setTimeout(() => {
+    //       this.startGame();
+    //       this.primeiroClique = [];
+    //     }, 1000);
+    // }
 
 
     this.toggleProperty1 = !this.toggleProperty1;
@@ -85,23 +87,24 @@ export class FlipCardComponent implements OnInit {
       this.primeiroClique.push(
         {
           src: imgDart, 
-          aberto: true
+          wasFound: true
         }
-      );    
+      );
     }
-    console.log(this.primeiroClique);
 
     //verificando se os dois itens iniciais no array primeiroClique são iguais
-    if(this.primeiroClique.length % 2 === 0) {
-      let checkCardsEqual = this.primeiroClique.every((val: any, i: any, arr: any) => val === arr[0])
-      console.log(checkCardsEqual); 
-      if(checkCardsEqual === false) {
-        setTimeout(() => {
-          this.startGame();
-          this.primeiroClique = [];
-        }, 1000);
-      }
-    }
+      let mapPrimeiroClique = this.primeiroClique.map((item: any) => item.src)
+      console.log(mapPrimeiroClique);
+
+      console.log(this.primeiroClique);
+      // let checkCardsEqual = Object.values(this.primeiroClique[0])
+      // let checkCardsEqual = this.primeiroClique.every((val: any, i: any, arr: any) => val === arr[0])
+      // if(checkCardsEqual === false) {
+      //   setTimeout(() => {
+      //     this.startGame();
+      //     this.primeiroClique = [];
+      //   }, 1000);
+      // }
 
 
     this.toggleProperty2 = !this.toggleProperty2;
@@ -122,13 +125,13 @@ export class FlipCardComponent implements OnInit {
       this.primeiroClique.push(
         {
           src: imgDocker, 
-          aberto: true
+          wasFound: true
         }
       );
     }
     console.log(this.primeiroClique);
     //verificando se os dois itens iniciais no array primeiroClique são iguais
-    if(this.primeiroClique.length % 2 === 0) {
+    
       let checkCardsEqual = this.primeiroClique.every((val: any, i: any, arr: any) => val === arr[0])
       console.log(checkCardsEqual); 
       if(checkCardsEqual === false) {
@@ -136,7 +139,6 @@ export class FlipCardComponent implements OnInit {
           this.startGame();
           this.primeiroClique = [];
         }, 1000);
-      }
     }
 
 
@@ -157,14 +159,14 @@ export class FlipCardComponent implements OnInit {
       this.primeiroClique.push(
         {
           src: imgGithub, 
-          aberto: true
+          wasFound: true
         }
       );
     }
 
     console.log(this.primeiroClique);
     //verificando se os dois itens iniciais no array primeiroClique são iguais
-    if(this.primeiroClique.length % 2 === 0) {
+    
       let checkCardsEqual = this.primeiroClique.every((val: any, i: any, arr: any) => val === arr[0])
       console.log(checkCardsEqual); 
       if(checkCardsEqual === false) {
@@ -173,7 +175,6 @@ export class FlipCardComponent implements OnInit {
           this.primeiroClique = [];
         }, 1000);
       }
-    }
 
 
     this.toggleProperty4 = !this.toggleProperty4;
@@ -193,14 +194,14 @@ export class FlipCardComponent implements OnInit {
       this.primeiroClique.push(
         {
           src: imgGoLang, 
-          aberto: true
+          wasFound: true
         }
       );    
     }
     console.log(this.primeiroClique)
 
     //verificando se os dois itens iniciais no array primeiroClique são iguais
-    if(this.primeiroClique.length % 2 === 0) {
+    
       let checkCardsEqual = this.primeiroClique.every((val: any, i: any, arr: any) => val === arr[0])
       console.log(checkCardsEqual); 
       if(checkCardsEqual === false) {
@@ -208,7 +209,6 @@ export class FlipCardComponent implements OnInit {
           this.startGame();
           this.primeiroClique = [];
         }, 1000);
-      }
     }
 
 
@@ -229,14 +229,13 @@ export class FlipCardComponent implements OnInit {
       this.primeiroClique.push(
         {
           src: imgKotlin, 
-          aberto: true
+          wasFound: true
         }
       );
     }
     console.log(this.primeiroClique)
 
     //verificando se os dois itens iniciais no array primeiroClique são iguais
-    if(this.primeiroClique.length % 2 === 0) {
       let checkCardsEqual = this.primeiroClique.every((val: any, i: any, arr: any) => val === arr[0])
       console.log(checkCardsEqual); 
       if(checkCardsEqual === false) {
@@ -244,7 +243,6 @@ export class FlipCardComponent implements OnInit {
           this.startGame();
           this.primeiroClique = [];
         }, 1000);
-      }
     }
 
     this.toggleProperty6 = !this.toggleProperty6;    
@@ -264,14 +262,13 @@ export class FlipCardComponent implements OnInit {
       this.primeiroClique.push(
         {
           src: imgGithub, 
-          aberto: true
+          wasFound: true
         }
       );    
     }
     console.log(this.primeiroClique)
 
     //verificando se os dois itens iniciais no array primeiroClique são iguais
-    if(this.primeiroClique.length % 2 === 0) {
       let checkCardsEqual = this.primeiroClique.every((val: any, i: any, arr: any) => val === arr[0])
       console.log(checkCardsEqual); 
       if(checkCardsEqual === false) {
@@ -279,7 +276,6 @@ export class FlipCardComponent implements OnInit {
           this.startGame();
           this.primeiroClique = [];
         }, 1000);
-      }
     }
 
 
@@ -300,14 +296,13 @@ export class FlipCardComponent implements OnInit {
       this.primeiroClique.push(
         {
           src: imgDocker, 
-          aberto: true
+          wasFound: true
         }
       );
     }
     console.log(this.primeiroClique)
 
     //verificando se os dois itens iniciais no array primeiroClique são iguais
-    if(this.primeiroClique.length % 2 === 0) {
       let checkCardsEqual = this.primeiroClique.every((val: any, i: any, arr: any) => val === arr[0])
       console.log(checkCardsEqual); 
       if(checkCardsEqual === false) {
@@ -315,7 +310,6 @@ export class FlipCardComponent implements OnInit {
           this.startGame();
           this.primeiroClique = [];
         }, 1000);
-      }
     }
 
     this.toggleProperty8 = !this.toggleProperty8;
@@ -335,14 +329,13 @@ export class FlipCardComponent implements OnInit {
       this.primeiroClique.push(
         {
           src: imgSass, 
-          aberto: true
+          wasFound: true
         }
       );
     }
     console.log(this.primeiroClique)
 
     //verificando se os dois itens iniciais no array primeiroClique são iguais
-    if(this.primeiroClique.length % 2 === 0) {
       let checkCardsEqual = this.primeiroClique.every((val: any, i: any, arr: any) => val === arr[0])
       console.log(checkCardsEqual); 
       if(checkCardsEqual === false) {
@@ -350,7 +343,6 @@ export class FlipCardComponent implements OnInit {
           this.startGame();
           this.primeiroClique = [];
         }, 1000);
-      }
     }
 
     this.toggleProperty9 = !this.toggleProperty9;
@@ -370,13 +362,12 @@ export class FlipCardComponent implements OnInit {
       this.primeiroClique.push(
         {
           src: imgKotlin, 
-          aberto: true
+          wasFound: true
         }
       );
     }
     console.log(this.primeiroClique)
     //verificando se os dois itens iniciais no array primeiroClique são iguais
-    if(this.primeiroClique.length % 2 === 0) {
       let checkCardsEqual = this.primeiroClique.every((val: any, i: any, arr: any) => val === arr[0])
       console.log(checkCardsEqual); 
       if(checkCardsEqual === false) {
@@ -384,7 +375,6 @@ export class FlipCardComponent implements OnInit {
           this.startGame();
           this.primeiroClique = [];
         }, 1000);
-      }
     }
 
 
@@ -405,13 +395,12 @@ export class FlipCardComponent implements OnInit {
       this.primeiroClique.push(
         {
           src: imgDart, 
-          aberto: true
+          wasFound: true
         }
       );
     }
     console.log(this.primeiroClique)
     //verificando se os dois itens iniciais no array primeiroClique são iguais
-    if(this.primeiroClique.length % 2 === 0) {
       let checkCardsEqual = this.primeiroClique.every((val: any, i: any, arr: any) => val === arr[0])
       console.log(checkCardsEqual); 
       if(checkCardsEqual === false) {
@@ -419,7 +408,6 @@ export class FlipCardComponent implements OnInit {
           this.startGame();
           this.primeiroClique = [];
         }, 1000);
-      }
     }
 
 
@@ -440,13 +428,12 @@ export class FlipCardComponent implements OnInit {
       this.primeiroClique.push(
         {
           src: imgGoLang, 
-          aberto: true
+          wasFound: true
         }
       );
     }
     console.log(this.primeiroClique)
     //verificando se os dois itens iniciais no array primeiroClique são iguais
-    if(this.primeiroClique.length % 2 === 0) {
       let checkCardsEqual = this.primeiroClique.every((val: any, i: any, arr: any) => val === arr[0])
       console.log(checkCardsEqual); 
       if(checkCardsEqual === false) {
@@ -454,7 +441,6 @@ export class FlipCardComponent implements OnInit {
           this.startGame();
           this.primeiroClique = [];
         }, 1000);
-      }
     }
 
 
