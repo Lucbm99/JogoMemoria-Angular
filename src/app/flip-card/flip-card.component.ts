@@ -48,11 +48,11 @@ export class FlipCardComponent implements OnInit {
       this.primeiroClique.push({
         src: imgSass,
         wasFound: true,
-        id: 1,
       });
     }
     this.toggleProperty1 = !this.toggleProperty1;
 
+    console.log(this.primeiroClique)
   }
 
   toggle1Remove(event: Event) {
@@ -69,10 +69,13 @@ export class FlipCardComponent implements OnInit {
       this.primeiroClique.push({
         src: imgDart,
         wasFound: true,
-        id: 2,
       });
     }
     this.toggleProperty2 = !this.toggleProperty2;
+
+    console.log(this.primeiroClique)
+    const filteredBooks = this.primeiroClique.filter((val: any) => val.src.includes());
+    console.log(filteredBooks);
   }
 
   toggle2Remove(event: Event) {
@@ -89,7 +92,6 @@ export class FlipCardComponent implements OnInit {
       this.primeiroClique.push({
         src: imgDocker,
         wasFound: true,
-        id: 3,
       });
     }
     this.toggleProperty3 = !this.toggleProperty3;
@@ -109,10 +111,11 @@ export class FlipCardComponent implements OnInit {
       this.primeiroClique.push({
         src: imgGithub,
         wasFound: true,
-        id: 4,
       });
     }
     this.toggleProperty4 = !this.toggleProperty4;
+
+    // console.log(this.primeiroClique.filter(item => item.src))
   }
 
   toggle4Remove(event: Event) {
@@ -129,7 +132,6 @@ export class FlipCardComponent implements OnInit {
       this.primeiroClique.push({
         src: imgGoLang,
         wasFound: true,
-        id: 5,
       });
     }
     this.toggleProperty5 = !this.toggleProperty5;
@@ -149,7 +151,6 @@ export class FlipCardComponent implements OnInit {
       this.primeiroClique.push({
         src: imgKotlin,
         wasFound: true,
-        id: 6,
       });
     }
     this.toggleProperty6 = !this.toggleProperty6;
@@ -169,7 +170,6 @@ export class FlipCardComponent implements OnInit {
       this.primeiroClique.push({
         src: imgGithub,
         wasFound: true,
-        id: 7,
       });
     }
     this.toggleProperty7 = !this.toggleProperty7;
@@ -189,7 +189,6 @@ export class FlipCardComponent implements OnInit {
       this.primeiroClique.push({
         src: imgDocker,
         wasFound: true,
-        id: 8,
       });
     }
     this.toggleProperty8 = !this.toggleProperty8;
@@ -209,10 +208,12 @@ export class FlipCardComponent implements OnInit {
       this.primeiroClique.push({
         src: imgSass,
         wasFound: true,
-        id: 9,
       });
     }
     this.toggleProperty9 = !this.toggleProperty9;
+
+    console.log(this.primeiroClique)
+
   }
 
   toggle9Remove(event: Event) {
@@ -229,7 +230,6 @@ export class FlipCardComponent implements OnInit {
       this.primeiroClique.push({
         src: imgKotlin,
         wasFound: true,
-        id: 10,
       });
     }
     this.toggleProperty10 = !this.toggleProperty10;
@@ -250,7 +250,6 @@ export class FlipCardComponent implements OnInit {
       this.primeiroClique.push({
         src: imgDart,
         wasFound: true,
-        id: 11,
       });
     }
     this.toggleProperty11 = !this.toggleProperty11;
@@ -270,7 +269,6 @@ export class FlipCardComponent implements OnInit {
       this.primeiroClique.push({
         src: imgGoLang,
         wasFound: true,
-        id: 12,
       });
     }
 
