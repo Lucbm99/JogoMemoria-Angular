@@ -52,7 +52,30 @@ export class FlipCardComponent implements OnInit {
     }
     this.toggleProperty1 = !this.toggleProperty1;
 
-    console.log(this.primeiroClique)
+    const PredicateSet = (predicate: any) => { 
+      const items: any = []; 
+    
+      return { 
+        add(item: any) { 
+          if (predicate(item, items)) { 
+            items.push(item); 
+          } 
+        }, 
+        forEach(consumer: any) { 
+          [...items].forEach(consumer); 
+        }, 
+        toArray() { 
+          return items; 
+        }, 
+      }; 
+    }; 
+    
+    const set = PredicateSet((item: any, setItems: any) => { 
+      return !setItems.some((setItem: any) => setItem.src === item.src); 
+    }); 
+    
+    this.primeiroClique.forEach((item:any) => set.add(item)); 
+    console.log(set.toArray()); 
   }
 
   toggle1Remove(event: Event) {
@@ -74,8 +97,30 @@ export class FlipCardComponent implements OnInit {
     this.toggleProperty2 = !this.toggleProperty2;
 
     console.log(this.primeiroClique)
-    const filteredBooks = this.primeiroClique.filter((val: any) => val.src.includes());
-    console.log(filteredBooks);
+    const PredicateSet = (predicate: any) => { 
+      const items: any = []; 
+    
+      return { 
+        add(item: any) { 
+          if (predicate(item, items)) { 
+            items.push(item); 
+          } 
+        }, 
+        forEach(consumer: any) { 
+          [...items].forEach(consumer); 
+        }, 
+        toArray() { 
+          return items; 
+        }, 
+      }; 
+    }; 
+    
+    const set = PredicateSet((item: any, setItems: any) => { 
+      return !setItems.some((setItem: any) => setItem.src === item.src); 
+    }); 
+    
+    this.primeiroClique.forEach((item:any) => set.add(item)); 
+    console.log(set.toArray()); 
   }
 
   toggle2Remove(event: Event) {
@@ -95,6 +140,30 @@ export class FlipCardComponent implements OnInit {
       });
     }
     this.toggleProperty3 = !this.toggleProperty3;
+    const PredicateSet = (predicate: any) => { 
+      const items: any = []; 
+    
+      return { 
+        add(item: any) { 
+          if (predicate(item, items)) { 
+            items.push(item); 
+          } 
+        }, 
+        forEach(consumer: any) { 
+          [...items].forEach(consumer); 
+        }, 
+        toArray() { 
+          return items; 
+        }, 
+      }; 
+    }; 
+    
+    const set = PredicateSet((item: any, setItems: any) => { 
+      return !setItems.some((setItem: any) => setItem.src === item.src); 
+    }); 
+    
+    this.primeiroClique.forEach((item:any) => set.add(item)); 
+    console.log(set.toArray()); 
   }
 
   toggle3Remove(event: Event) {
@@ -115,7 +184,30 @@ export class FlipCardComponent implements OnInit {
     }
     this.toggleProperty4 = !this.toggleProperty4;
 
-    // console.log(this.primeiroClique.filter(item => item.src))
+    const PredicateSet = (predicate: any) => { 
+      const items: any = []; 
+    
+      return { 
+        add(item: any) { 
+          if (predicate(item, items)) { 
+            items.push(item); 
+          } 
+        }, 
+        forEach(consumer: any) { 
+          [...items].forEach(consumer); 
+        }, 
+        toArray() { 
+          return items; 
+        }, 
+      }; 
+    }; 
+    
+    const set = PredicateSet((item: any, setItems: any) => { 
+      return !setItems.some((setItem: any) => setItem.src === item.src); 
+    }); 
+    
+    this.primeiroClique.forEach((item:any) => set.add(item)); 
+    console.log(set.toArray()); 
   }
 
   toggle4Remove(event: Event) {
@@ -135,6 +227,30 @@ export class FlipCardComponent implements OnInit {
       });
     }
     this.toggleProperty5 = !this.toggleProperty5;
+    const PredicateSet = (predicate: any) => { 
+      const items: any = []; 
+    
+      return { 
+        add(item: any) { 
+          if (predicate(item, items)) { 
+            items.push(item); 
+          } 
+        }, 
+        forEach(consumer: any) { 
+          [...items].forEach(consumer); 
+        }, 
+        toArray() { 
+          return items; 
+        }, 
+      }; 
+    }; 
+    
+    const set = PredicateSet((item: any, setItems: any) => { 
+      return !setItems.some((setItem: any) => setItem.src === item.src); 
+    }); 
+    
+    this.primeiroClique.forEach((item:any) => set.add(item)); 
+    console.log(set.toArray()); 
   }
 
   toggle5Remove(event: Event) {
@@ -154,6 +270,30 @@ export class FlipCardComponent implements OnInit {
       });
     }
     this.toggleProperty6 = !this.toggleProperty6;
+    const PredicateSet = (predicate: any) => { 
+      const items: any = []; 
+    
+      return { 
+        add(item: any) { 
+          if (predicate(item, items)) { 
+            items.push(item); 
+          } 
+        }, 
+        forEach(consumer: any) { 
+          [...items].forEach(consumer); 
+        }, 
+        toArray() { 
+          return items; 
+        }, 
+      }; 
+    }; 
+    
+    const set = PredicateSet((item: any, setItems: any) => { 
+      return !setItems.some((setItem: any) => setItem.src === item.src); 
+    }); 
+    
+    this.primeiroClique.forEach((item:any) => set.add(item)); 
+    console.log(set.toArray()); 
   }
 
   toggle6Remove(event: Event) {
@@ -173,6 +313,31 @@ export class FlipCardComponent implements OnInit {
       });
     }
     this.toggleProperty7 = !this.toggleProperty7;
+
+    const PredicateSet = (predicate: any) => { 
+      const items: any = []; 
+    
+      return { 
+        add(item: any) { 
+          if (predicate(item, items)) { 
+            items.push(item); 
+          } 
+        }, 
+        forEach(consumer: any) { 
+          [...items].forEach(consumer); 
+        }, 
+        toArray() { 
+          return items; 
+        }, 
+      }; 
+    }; 
+    
+    const set = PredicateSet((item: any, setItems: any) => { 
+      return !setItems.some((setItem: any) => setItem.src === item.src); 
+    }); 
+    
+    this.primeiroClique.forEach((item:any) => set.add(item)); 
+    console.log(set.toArray()); 
   }
 
   toggle7Remove(event: Event) {
@@ -192,6 +357,31 @@ export class FlipCardComponent implements OnInit {
       });
     }
     this.toggleProperty8 = !this.toggleProperty8;
+
+    const PredicateSet = (predicate: any) => { 
+      const items: any = []; 
+    
+      return { 
+        add(item: any) { 
+          if (predicate(item, items)) { 
+            items.push(item); 
+          } 
+        }, 
+        forEach(consumer: any) { 
+          [...items].forEach(consumer); 
+        }, 
+        toArray() { 
+          return items; 
+        }, 
+      }; 
+    }; 
+    
+    const set = PredicateSet((item: any, setItems: any) => { 
+      return !setItems.some((setItem: any) => setItem.src === item.src); 
+    }); 
+    
+    this.primeiroClique.forEach((item:any) => set.add(item)); 
+    console.log(set.toArray()); 
   }
 
   toggle8Remove(event: Event) {
@@ -211,6 +401,31 @@ export class FlipCardComponent implements OnInit {
       });
     }
     this.toggleProperty9 = !this.toggleProperty9;
+
+    const PredicateSet = (predicate: any) => { 
+      const items: any = []; 
+    
+      return { 
+        add(item: any) { 
+          if (predicate(item, items)) { 
+            items.push(item); 
+          } 
+        }, 
+        forEach(consumer: any) { 
+          [...items].forEach(consumer); 
+        }, 
+        toArray() { 
+          return items; 
+        }, 
+      }; 
+    }; 
+    
+    const set = PredicateSet((item: any, setItems: any) => { 
+      return !setItems.some((setItem: any) => setItem.src === item.src); 
+    }); 
+    
+    this.primeiroClique.forEach((item:any) => set.add(item)); 
+    console.log(set.toArray()); 
 
     console.log(this.primeiroClique)
 
@@ -233,7 +448,30 @@ export class FlipCardComponent implements OnInit {
       });
     }
     this.toggleProperty10 = !this.toggleProperty10;
-
+    const PredicateSet = (predicate: any) => { 
+      const items: any = []; 
+    
+      return { 
+        add(item: any) { 
+          if (predicate(item, items)) { 
+            items.push(item); 
+          } 
+        }, 
+        forEach(consumer: any) { 
+          [...items].forEach(consumer); 
+        }, 
+        toArray() { 
+          return items; 
+        }, 
+      }; 
+    }; 
+    
+    const set = PredicateSet((item: any, setItems: any) => { 
+      return !setItems.some((setItem: any) => setItem.src === item.src); 
+    }); 
+    
+    this.primeiroClique.forEach((item:any) => set.add(item)); 
+    console.log(set.toArray()); 
   }
 
   toggle10Remove(event: Event) {
@@ -253,6 +491,30 @@ export class FlipCardComponent implements OnInit {
       });
     }
     this.toggleProperty11 = !this.toggleProperty11;
+    const PredicateSet = (predicate: any) => { 
+      const items: any = []; 
+    
+      return { 
+        add(item: any) { 
+          if (predicate(item, items)) { 
+            items.push(item); 
+          } 
+        }, 
+        forEach(consumer: any) { 
+          [...items].forEach(consumer); 
+        }, 
+        toArray() { 
+          return items; 
+        }, 
+      }; 
+    }; 
+    
+    const set = PredicateSet((item: any, setItems: any) => { 
+      return !setItems.some((setItem: any) => setItem.src === item.src); 
+    }); 
+    
+    this.primeiroClique.forEach((item:any) => set.add(item)); 
+    console.log(set.toArray()); 
   }
 
   toggle11Remove(event: Event) {
@@ -272,7 +534,31 @@ export class FlipCardComponent implements OnInit {
       });
     }
 
-    this.toggleProperty12 = !this.toggleProperty12
+    this.toggleProperty12 = !this.toggleProperty12;
+        const PredicateSet = (predicate: any) => { 
+      const items: any = []; 
+    
+      return { 
+        add(item: any) { 
+          if (predicate(item, items)) { 
+            items.push(item); 
+          } 
+        }, 
+        forEach(consumer: any) { 
+          [...items].forEach(consumer); 
+        }, 
+        toArray() { 
+          return items; 
+        }, 
+      }; 
+    }; 
+    
+    const set = PredicateSet((item: any, setItems: any) => { 
+      return !setItems.some((setItem: any) => setItem.src === item.src); 
+    }); 
+    
+    this.primeiroClique.forEach((item:any) => set.add(item)); 
+    console.log(set.toArray()); 
   }
 
   toggle12Remove(event: Event) {
