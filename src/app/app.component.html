@@ -1,3 +1,9 @@
-<app-flip-card>
-
-<app-flip-card>
+<mat-toolbar color="primary" class="text-center">
+    Jogo da memória
+  </mat-toolbar>
+  <div class="p-16">
+    <div class="grid p-16">
+      <app-card-game *ngFor="let c of cards; let idx=index" [data]="c" (cardClicked)="cardClicked(idx)">
+      </app-card-game>
+    </div>
+  </div>
