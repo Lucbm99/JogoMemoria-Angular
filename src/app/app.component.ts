@@ -13,11 +13,11 @@ export class AppComponent {
 
   
   cardImages = [
-    'angular.png',
-    'vue.png',
-    'react.png',
-    'golang.png',
-    'kotlin.png'
+    'java.png',
+    'bootstrap.png',
+    'ruby.png',
+    'wordpress.png',
+    'python.png',
   ];
 
   cards: CardData[] = [];
