@@ -32,7 +32,6 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 })
 
 export class CardGameComponent implements OnInit {
-
   
   @Output() cardClicked = new EventEmitter();
   @Input() data: any;
