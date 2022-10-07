@@ -42,7 +42,7 @@ export class AppComponent {
   setupCards(): void {
     this.cards = [];
 
-    //baseado no array das imagens declarado na linha 15, com o nome das fotos, preencho um objeto 
+    //baseado no array das imagens declarado na linha 14, com o nome das fotos, preencho um objeto 
     //com a propriedade image -- itens do array em imageSrc. 
     this.cardImages.forEach((image) => {
       const cardData: CardData = {
