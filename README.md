@@ -33,7 +33,7 @@ NPM: https://npmjs.com
 
 ## 📦 Status da aplicação
 
-🚧 Em andamento 🚧
+🚧 Finalizado 🚧
 
 
 ## 🛠️ Feito com
