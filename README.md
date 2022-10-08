@@ -35,6 +35,9 @@ NPM: https://npmjs.com
 
 🚧 Finalizado 🚧
 
+Link da aplicação: https://jogo-memoria-peach.vercel.app/
+
+Projeto foi feito utilizando esse tutorial como base: https://zoaibkhan.com/blog/how-to-create-a-card-memory-game-in-angular/
 
 ## 🛠️ Feito com
 * [NodeJS](https://nodejs.org/en/)
